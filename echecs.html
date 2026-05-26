@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Site Web Evenementiel</title>
+        <title>Jeu d'échecs</title>
         <!-- Icon -->
         <link rel="icon" style="image/png" href="img/Logo.png">
         <!-- Fonts -->
@@ -101,18 +101,30 @@
             </div>
         </nav>
         <!-- Hero Presentation Section-->  
-        <section class="relative bg-[url('img/Echiquier.png')] bg-fixed bg-cover bg-center min-h-screen flex items-center justify-center pl-10">
+        <section id="accueil" class="bg-[url('img/Echiquier.png')] bg-fixed bg-center min-h-screen flex items-center justify-center relative">
             <div class="absolute inset-0 bg-black/50"></div>
-            <div class="ml-12 z-10 text-center px-4 text-white animate-slide-up">
-                <h1 class="text-6xl font-bold">
-                    Jeu d'échecs
-                </h1>
-                <p class="text-2xl mt-4">
-                    Développé avec une autre étudiante de ma formation<br>en Java
-                </p>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+                <div class="grid lg:grid-cols-1 gap-12 items-center">
+                    <!-- Content -->
+                    <div class="text-center lg:text-center brightness-200 animate-slide-in-left">
+                        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
+                            <span class="text-white">Jeu D'échecs</span>
+                        </h1>
+                        <p class="text-xl text-white mb-8 leading-relaxed max-w-2xl">
+                            Développé avec une autre étudiante de ma formation<br>en Java
+                        </p>
+                    </div>
+                </div>
             </div>
-
+            
+            <!-- Scroll indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="#competences" class="text-white hover:text-primary-200 transition-colors duration-300">
+                    <i class="fas fa-chevron-down text-2xl"></i>
+                </a>
+            </div>
         </section>
+
         <section class="py-8">
                 <h1 class="ml-8 text-center text-4xl font-bold my-16 animate-fade-in">Voyez le résultat !</h1>
                 <div class="section-paddin flex justify-center items-center my-16 py-12">
